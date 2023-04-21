@@ -1,0 +1,17 @@
+.cards {
+    background-color: #f6f6f6;
+    border-radius:25px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top:3%;
+    padding-left:3%;
+    padding-right:3%;
+    justify-content: space-between;
+}
+
+@media screen and (width <= 1074px) {
+    .cards {
+        background-color: #ffffff;
+        padding:0;
+    }
+}

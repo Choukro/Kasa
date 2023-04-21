@@ -1,11 +1,17 @@
-import Banner from '../components/Banner';
 import Header from '../components/Header';
+import Main from '../components/Main';
+import Banner from '../components/Banner';
+import HousingCards from '../components/HousingCards';
+
 
 function Home() {
   return (
     <div>
       <Header />
-      <Banner />
+      <Main>
+        <Banner />
+        <HousingCards />
+      </Main>
     </div>
   );
 }
