@@ -1,12 +1,12 @@
 import Header from '../components/Header';
 
-function AboutUs() {
+function Error() {
     return (
         <div>
             <Header />
-            <h1>About us ❓</h1>
+            <h1>404 not found</h1>
         </div>
-    )
-}
-
-export default AboutUs
+    );
+  }
+  
+  export default Error;
