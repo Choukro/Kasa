@@ -1,13 +1,16 @@
-function App() {
+import Banner from '../components/Banner'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
+
+
+function Home() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/pages/Home.jsx</code> and save to reload.
-        </p>
-      </header>
+    <div>
+      <Header />
+      <Banner />
+      <Footer />
     </div>
   );
 }
 
-export default App;
+export default Home;
