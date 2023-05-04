@@ -1,0 +1,79 @@
+.housing-page {
+    color: #FF6060;
+}
+
+.housing-page div:first-child {
+    margin-bottom: 1rem;
+}
+
+.housing-page__image {
+    width:100%;
+    height:20rem;
+    border-radius: 25px;
+}
+
+.housing-page__header {
+    display: flex;
+}
+
+.housing-page__title {
+    flex-grow: 1;
+}
+
+.housing-page__title h1 {
+    font-weight: 500;
+    margin-block:0;
+    font-size: 36px;
+}
+.housing-page__title h2 {
+    font-weight: 500;
+    margin-top:0;
+    font-size: 18px;
+}
+
+.housing-page__tags {
+    display : grid;
+    grid-template-columns: repeat(auto-fit, minmax(115px, 150px));
+    gap: 1rem;
+}
+
+.housing-page__tags span {
+    background-color : #FF6060;
+    color: #FFFFFF;
+    padding: 0.3em 1em;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.housing-page__owner {
+    margin-right: auto;
+}
+
+.housing-page__owner__details {
+    display : flex;
+}
+
+.housing-page__owner h3 {
+    margin-block: 0;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.housing-page__owner__badge {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color:#C4C4C4;
+}
+
+.fa-star {
+	color: #E3E3E3;
+	padding: 1rem;
+}
+
+.red {
+	color: #FF6060;
+}
