@@ -28,7 +28,7 @@ const router = createBrowserRouter([
                 element: <Home />,
             },
             {
-                path:"/Fiche-Logement",
+                path:"/Fiche-Logement/:id",
                 element: <HousingPage />
             },
             {

@@ -24,11 +24,11 @@ function HousingPage() {
                         <div className="housing-page__owner__badge"></div>
                     </div>
                     <div className="housing-page__owner__star">
-                        <i class="fa fa-star red"></i>
-                        <i class="fa fa-star red"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
+                        <i className="fa fa-star red"></i>
+                        <i className="fa fa-star red"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
                     </div>
                 </div>
             </div>

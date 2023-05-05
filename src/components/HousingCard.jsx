@@ -1,12 +1,15 @@
 import '../style/HousingCard.css';
+import { NavLink } from "react-router-dom";
 
 
-function HousingCard() {
+function HousingCard({id, title, cover}) {
     return (
         <div className='card'>
-            <div className='card__title'>
-                Titre de la location
-            </div>
+            <NavLink to={`/Fiche-Logement/${id}`}>
+                <img src={cover} alt={title} className="card__image"/>
+                <div className='card__title'>{title}</div>
+            </NavLink>
+            
         </div>
     );
 }

@@ -1,15 +1,16 @@
 import '../style/HousingCards.css';
-//import Image from "../assets/banner-home.jpg";
 import HousingCard from '../components/HousingCard';
+import HousingList from "../datas/housingList.json"
 
 
 function HousingCards() {
+    const housingList = HousingList;
+    //console.log(housingList);
     return (
         <div className='cards'>
-            <HousingCard />
-            <HousingCard />
-            <HousingCard />
-            <HousingCard />
+            {housingList.map((housing) => (
+                <HousingCard key={housing.id} title={housing.title} cover={housing.cover} id={housing.id}/>
+            ))}
         </div>
     );
 }

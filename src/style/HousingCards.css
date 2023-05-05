@@ -9,7 +9,7 @@
     justify-content: space-between;
 }
 
-@media screen and (width <= 1074px) {
+@media screen and (width <= 1024px) {
     .cards {
         background-color: #ffffff;
         padding:0;

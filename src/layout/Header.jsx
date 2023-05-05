@@ -12,7 +12,7 @@ function Header() {
             </div>
         </NavLink>
         <NavLink to="/" >Accueil</NavLink>
-        <NavLink to="/A-Propos">A propos</NavLink>
+        <NavLink to="/A-Propos" >A propos</NavLink>
     </nav>
     );
 }
