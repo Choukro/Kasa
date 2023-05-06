@@ -1,11 +1,11 @@
 import '../style/HousingCards.css';
 import HousingCard from '../components/HousingCard';
-import HousingList from "../datas/housingList.json"
-
+//import HousingList from "../datas/housingList.json"
+import {useFlatsList} from "../hooks/useFlatsList";
 
 function HousingCards() {
-    const housingList = HousingList;
-    //console.log(housingList);
+    //const housingList = HousingList;
+    const housingList = useFlatsList();
     return (
         <div className='cards'>
             {housingList.map((housing) => (

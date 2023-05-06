@@ -9,7 +9,6 @@ function HousingCard({id, title, cover}) {
                 <img src={cover} alt={title} className="card__image"/>
                 <div className='card__title'>{title}</div>
             </NavLink>
-            
         </div>
     );
 }
