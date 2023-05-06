@@ -1,43 +1,16 @@
 import '../style/HousingPage.css';
+import HousingHeader from '../components/HousingHeader';
+import HousingCarousel from '../components/HousingCarousel';
+import Collapse from '../components/Collapse';
 
 
 function HousingPage() {
     return (
         <div className="housing-page">
-            <div className="housing-page__image">Image carroussel logement</div>
-            <div className="housing-page__header">
-                <div className="housing-page__title">
-                    <h1>titre h1</h1>
-                    <h2>titre h2</h2>
-                    <div className="housing-page__tags">
-                        <span>paragraphe</span>
-                        <span>paragraphe</span>
-                        <span>paragraphe</span>
-                    </div>
-                </div>
-                <div className="housing-page__owner">
-                    <div className="housing-page__owner__details">
-                        <h3>
-                            <span>prenom</span>
-                            <span>nom</span>
-                        </h3>
-                        <div className="housing-page__owner__badge"></div>
-                    </div>
-                    <div className="housing-page__owner__star">
-                        <i className="fa fa-star red"></i>
-                        <i className="fa fa-star red"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                    </div>
-                </div>
-            </div>
-            <div className="housing-page__description">
-                <p>paragraphe</p>
-            </div>
-            <div className="housing-page__description">
-                <p>paragraphe</p>
-            </div>
+            <HousingCarousel />
+            <HousingHeader />
+            <Collapse />
+            <Collapse />
         </div>
     );
 }
