@@ -1,7 +1,15 @@
 .housing-page {
     color: #FF6060;
+    margin-top:-2.75rem;
 }
 
-.housing-page div:first-child {
-    margin-bottom: 1rem;
+.housing-page__collapses {
+    display: flex;
+    gap: 1rem;
+}
+
+@media screen and (width <= 768px) {
+    .housing-page__collapses {
+        flex-direction: column;
+    }
 }

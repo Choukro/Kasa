@@ -1,31 +1,36 @@
 import '../style/HousingHeader.css';
+import { FaStar } from "react-icons/fa";
 
-function HousingHeader() {
+function HousingHeader({ housing }) {
+    const { name } = housing.host;
+    const [firstName, lastName] = name.split(" ");
     return (
         <div className="housing-page__header">
             <div className="housing-page__title">
-                <h1>titre h1</h1>
-                <h2>titre h2</h2>
+                <h1>{housing.title}</h1>
+                <h2>{housing.location}</h2>
                 <div className="housing-page__tags">
-                    <span>paragraphe</span>
-                    <span>paragraphe</span>
-                    <span>paragraphe</span>
+                    {housing.tags.map((tag) => (
+                        <span key={tag}>{tag}</span>
+                    ))}
                 </div>
             </div>
             <div className="housing-page__owner">
                 <div className="housing-page__owner__details">
                     <h3>
-                        <span>prenom</span>
-                        <span>nom</span>
+                        <span>{firstName}</span>
+                        <span>{lastName}</span>
                     </h3>
-                    <div className="housing-page__owner__badge"></div>
+                    <div className="housing-page__owner__badge">
+                        <img src={housing.host.picture} alt="Photographie de l'hôte" />
+                    </div>
                 </div>
                 <div className="housing-page__owner__star">
-                    <i className="fa fa-star red"></i>
-                    <i className="fa fa-star red"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
+                    {[1, 2, 3, 4, 5].map((num) => (
+                        <span key={num} className={housing.rating >= num ? "red-star" : ""}>
+                            <FaStar className="housing-page__star__icon" />
+                        </span>
+                    ))}
                 </div>
             </div>
         </div>

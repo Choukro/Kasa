@@ -1,16 +1,38 @@
 .navbar {
     display: flex;
-    gap:2rem;
     align-items: center;
     color: #FF6060;
     font-weight: 500;
     margin-bottom: 4rem;
-    padding-inline: 3em;
+    padding-inline: 6em;
     margin-top:3rem;
+}
+
+@media screen and (width <= 768px) {
+    .navbar {
+        padding-inline:1.25em;
+    }
 }
 
 .navbar > *:first-child {
     margin-right:auto;
+}
+
+@media screen and (width <= 768px) {
+    .navbar__logo img {
+        width:80%;
+    }
+}
+
+.navbar__menu {
+    display: flex;
+    gap:2rem;
+}
+
+@media screen and (width <= 768px) {
+    .navbar__menu {
+        gap:0.5rem;
+    }
 }
 
 .navbar a {

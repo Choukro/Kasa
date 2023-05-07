@@ -1,5 +1,64 @@
 .housing-page__image {
+    max-width:100%;
+    height:415px;
+    margin-bottom:1.875rem;
+    position: relative;
+}
+
+@media screen and (width <= 768px) {
+    .housing-page__image {
+        height:255px;
+    }
+}
+
+.housing-page__image img {
+    height:100%;
     width:100%;
-    height:20rem;
+    object-fit: cover;
     border-radius: 25px;
+    position: absolute;
+}
+
+.housing-page__btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5rem;
+    background-color: transparent;
+    border-width:0;
+    cursor: pointer;
+}
+
+.btn-next {
+    right: 0;
+    text-align: right;
+}
+
+.btn-previous {
+    left: 0;
+    text-align: left;
+}
+
+.housing-page__icon {
+    color:#ffffff;
+    font-size: 4vw;
+}
+
+@media screen and (width <= 768px) {
+    .housing-page__icon {
+        font-size: 1.5rem;
+    }
+    .housing-page__slide-counter {
+        display: none;
+    }
+}
+
+.housing-page__slide-counter {
+    position: absolute;
+    text-align: center;
+    width:100%;
+    bottom: 1.5rem;
+    color:#ffffff;
+    font-size:1.125rem;
+    font-weight:500;
 }

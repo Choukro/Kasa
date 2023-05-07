@@ -11,8 +11,10 @@ function Header() {
                 <img src = {Logo} alt="kasa, location d'appartements" />
             </div>
         </NavLink>
-        <NavLink to="/" >Accueil</NavLink>
-        <NavLink to="/A-Propos" >A propos</NavLink>
+        <div className='navbar__menu'>
+            <NavLink to="/" >Accueil</NavLink>
+            <NavLink to="/A-Propos" >A propos</NavLink>
+        </div>
     </nav>
     );
 }

@@ -1,5 +1,6 @@
 .housing-page__header {
     display: flex;
+    margin-bottom:1rem;
 }
 
 @media screen and (width <= 768px) {
@@ -17,16 +18,38 @@
     margin-block:0;
     font-size: 2.25rem;
 }
+
+@media screen and (width <= 768px) {
+    .housing-page__title h1 {
+        font-size : 1.125rem;
+    }
+}
+
 .housing-page__title h2 {
     font-weight: 500;
     margin-top:0;
     font-size: 1.125rem;
+    margin-bottom:1.5rem;
+}
+
+@media screen and (width <= 768px) {
+    .housing-page__title h2 {
+        font-size : 0.875rem;
+        margin-bottom:0.75rem;
+    }
 }
 
 .housing-page__tags {
     display : grid;
-    grid-template-columns: repeat(auto-fit, minmax(115px, 150px));
+    grid-template-columns: repeat(auto-fit, minmax(115px, 180px));
     gap: 1rem;
+}
+
+@media screen and (width <= 768px) {
+    .housing-page__tags {
+        grid-template-columns: repeat(auto-fit, minmax(84px, 110px));
+        margin-bottom:1rem;
+    }
 }
 
 .housing-page__tags span {
@@ -35,26 +58,35 @@
     padding: 0.3em 1em;
     border-radius: 10px;
     text-align: center;
+    font-size : 0.875rem;
+}
+
+@media screen and (width <= 768px) {
+    .housing-page__tags span {
+        font-size : 0.625rem;
+    }
 }
 
 .housing-page__owner {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: space-between;
 }
 
 @media screen and (width <= 768px) {
     .housing-page__owner {
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
     }
 }
 
 .housing-page__owner__details {
     display : flex;
     gap: 0.7rem;
+    align-items: center;
 }
+
 @media screen and (width <= 768px) {
     .housing-page__owner__details {
         order: 1;
@@ -70,18 +102,39 @@
     align-items: flex-end;
 }
 
-.housing-page__owner__badge {
+@media screen and (width <= 768px) {
+    .housing-page__owner h3 {
+        font-size : 0.75rem;
+    }
+}
+
+.housing-page__owner__badge img {
     height: 50px;
     width: 50px;
     border-radius: 50%;
     background-color:#C4C4C4;
 }
 
-.housing-page__owner__star .fa-star {
-	color: #E3E3E3;
-	padding: 0.5rem;
+.housing-page__owner__star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
 }
 
-.housing-page__owner__star i.red {
+.housing-page__star__icon {
+	color: #E3E3E3;
+	padding: 0.2rem;
+    font-size: 1.7rem;
+}
+
+@media screen and (width <= 768px) {
+    .housing-page__star__icon {
+        font-size: 0.9rem;
+        padding: 0.1rem;
+    }
+}
+
+.red-star .housing-page__star__icon {
 	color: #FF6060;
 }
