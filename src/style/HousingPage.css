@@ -5,11 +5,16 @@
 
 .housing-page__collapses {
     display: flex;
-    gap: 1rem;
+    gap: 4.75rem;
 }
 
 @media screen and (width <= 768px) {
     .housing-page__collapses {
         flex-direction: column;
+        gap:1.25rem;
     }
+}
+
+.housing-page__collapses li {
+    list-style-type: none;
 }

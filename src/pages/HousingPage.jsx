@@ -18,7 +18,10 @@ function HousingPage() {
                 <Collapse title="Description" content={housingId.description} />
                 <Collapse 
                 title="Équipements"
-                content={housingId.equipments}
+                content=
+                    {housingId.equipments.map((equipment) => (
+                        <li key={equipment}>{equipment}</li>
+                    ))}
                 />
             </div>
         </div>

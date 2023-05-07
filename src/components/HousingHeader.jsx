@@ -27,9 +27,7 @@ function HousingHeader({ housing }) {
                 </div>
                 <div className="housing-page__owner__star">
                     {[1, 2, 3, 4, 5].map((num) => (
-                        <span key={num} className={housing.rating >= num ? "red-star" : ""}>
-                            <FaStar className="housing-page__star__icon" />
-                        </span>
+                        <FaStar key={num} className={housing.rating >= num ? "housing-page__star__icon red-star" : "housing-page__star__icon"} />
                     ))}
                 </div>
             </div>

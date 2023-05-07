@@ -1,11 +1,12 @@
 .housing-page__header {
     display: flex;
-    margin-bottom:1rem;
+    margin-bottom:1.5rem;
 }
 
 @media screen and (width <= 768px) {
     .housing-page__header {
         flex-direction: column;
+        margin-bottom:1rem;
     }
 }
 
@@ -47,7 +48,7 @@
 
 @media screen and (width <= 768px) {
     .housing-page__tags {
-        grid-template-columns: repeat(auto-fit, minmax(84px, 110px));
+        grid-template-columns: repeat(auto-fit, minmax(84px, 115px));
         margin-bottom:1rem;
     }
 }
@@ -108,11 +109,24 @@
     }
 }
 
-.housing-page__owner__badge img {
-    height: 50px;
-    width: 50px;
+.housing-page__owner__badge {
+    height: 64px;
+    width: 64px;
     border-radius: 50%;
     background-color:#C4C4C4;
+}
+
+@media screen and (width <= 768px) {
+    .housing-page__owner__badge {
+        height: 32px;
+        width: 32px;
+    } 
+}
+
+.housing-page__owner__badge img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
 }
 
 .housing-page__owner__star {
@@ -135,6 +149,6 @@
     }
 }
 
-.red-star .housing-page__star__icon {
+.red-star {
 	color: #FF6060;
 }
