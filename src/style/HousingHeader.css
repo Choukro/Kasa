@@ -23,6 +23,7 @@
 @media screen and (width <= 768px) {
     .housing-page__title h1 {
         font-size : 1.125rem;
+        margin-bottom: 0.4rem;
     }
 }
 

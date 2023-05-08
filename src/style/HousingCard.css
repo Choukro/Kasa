@@ -17,6 +17,11 @@
     .card {
         flex-basis: 100%;
     }
+    .card:last-child {
+        margin-right:unset;
+        margin-left:unset;
+    
+    }
 }
 
 .card a {

@@ -2,6 +2,7 @@ import Header from '../layout/Header';
 import Main from '../layout/Main';
 import '../style/Error.css';
 import { NavLink } from "react-router-dom";
+import Footer from '../layout/Footer';
 
 
 function Error() {
@@ -15,6 +16,7 @@ function Error() {
                     <NavLink to="/" >Retourner sur la page d’accueil</NavLink>
                 </div>
             </Main>
+            <Footer />
         </div>
     );
   }
