@@ -34,8 +34,12 @@ const router = createBrowserRouter([
             {
                 path:"/A-Propos",
                 element: <AboutUs />
-            }
+            },
         ]
+    },
+    {
+      path:"/*",
+      element: <Error />
     }
 ]);
 
