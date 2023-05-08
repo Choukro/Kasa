@@ -5,7 +5,7 @@ import HousingCards from '../components/HousingCards';
 function Home() {
   return (
     <div>
-        <Banner />
+        <Banner home={true}/>
         <HousingCards />
     </div>
   );

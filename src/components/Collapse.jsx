@@ -4,16 +4,17 @@ import { FaChevronUp } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa";
 
 function Collapse(props) {
+    const collapseClass = "collapse collapse" + (props.about ? "--about" : "--default");
     const [contentIsVisible, setContentIsVisible] = useState(false);
     const hideContent = () => {
     setContentIsVisible(!contentIsVisible);
     };
-    const contentClass = "housing-page__collapse__content housing-page__collapse__content" + (contentIsVisible ? "__visible" : "__hidden");
-    const FaChevronUpClass = "housing-page__collapse__icon" + (contentIsVisible ? "__visible" : "__hidden" );
-    const FaChevronDownClass = "housing-page__collapse__icon" + (contentIsVisible ?  "__hidden" : "__visible" );
+    const contentClass = "collapse__content collapse__content" + (contentIsVisible ? "--visible" : "--hidden");
+    const FaChevronUpClass = "collapse__icon" + (contentIsVisible ? "--visible" : "--hidden" );
+    const FaChevronDownClass = "collapse__icon" + (contentIsVisible ?  "--hidden" : "--visible" );
     return (
-        <div className="housing-page__collapse">
-            <p className="housing-page__collapse__title" onClick={hideContent}>
+        <div className={collapseClass}>
+            <p className="collapse__title" onClick={hideContent}>
                 <span>{props.title}</span>
                 <FaChevronUp  className={FaChevronUpClass} />
                 <FaChevronDown  className={FaChevronDownClass} />

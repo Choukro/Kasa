@@ -25,8 +25,9 @@ function HousingPage() {
                 <HousingCarousel housing={housingId} />
                 <HousingHeader housing={housingId} />
                 <div className="housing-page__collapses">
-                    <Collapse title="Description" content={housingId.description} />
+                    <Collapse about={false} title="Description" content={housingId.description} />
                     <Collapse 
+                    about={false}
                     title="Équipements"
                     content=
                         {housingId.equipments.map((equipment) => (

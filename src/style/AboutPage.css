@@ -1,0 +1,22 @@
+.about-page {
+    color: #FF6060;
+}
+
+.about-page__collapses {
+    display: flex;
+    gap: 1.9rem;
+    flex-direction: column;
+    padding-inline:6.25em;
+}
+
+@media screen and (width <= 768px) {
+    .about-page__collapses {
+        flex-direction: column;
+        gap:1.25rem;
+        padding-inline: 0;
+    }
+}
+
+.about-page__collapses li {
+    list-style-type: none;
+}

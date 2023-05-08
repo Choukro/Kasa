@@ -3,6 +3,12 @@
     margin-top:-2.75rem;
 }
 
+@media screen and (width <= 768px) {
+    .housing-page {
+        margin-top:0;
+    }
+}
+
 .housing-page__collapses {
     display: flex;
     gap: 4.75rem;

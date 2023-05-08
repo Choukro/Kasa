@@ -1,16 +1,16 @@
-.housing-page__collapse {
+.collapse {
     margin-bottom: 1rem;
     flex-basis: 50%;
     overflow: hidden;
 }
 
 @media screen and (width <= 768px) {
-    .housing-page__collapse {
+    .collapse {
         margin-bottom: 0;
     }
 }
 
-.housing-page__collapse__title {
+.collapse__title {
     display : flex;
     justify-content: space-between;
     background-color: #FF6060;
@@ -23,25 +23,25 @@
 }
 
 @media screen and (width <= 768px) {
-    .housing-page__collapse__title {
+    .collapse__title {
         padding : 0.4em 0.75em;
         border-radius: 5px;
     }
 }
 
-.housing-page__collapse__title span {
+.collapse__title span {
     font-size:1.125rem;
     font-weight:500;
     color: #FFFFFF;
 }
 
 @media screen and (width <= 768px) {
-    .housing-page__collapse__title span {
+    .collapse__title span {
         font-size:0.8125rem;
     }
 }
 
-.housing-page__collapse__icon__visible {
+.collapse__icon--visible {
     color: #FFFFFF;
     font-size:1.5rem;
     position:absolute;
@@ -50,44 +50,59 @@
 }
 
 @media screen and (width <= 768px) {
-    .housing-page__collapse__icon__visible {
+    .collapse__icon--visible {
         margin-right:0.5rem;
         font-size:1.25rem;
     }
 }
 
-.housing-page__collapse__icon__hidden {
+.collapse__icon--hidden {
     display:none;
 }
 
-.housing-page__collapse__content {
+.collapse__content {
     background-color: #F7F7F7;
     border-radius: 5px;
-    font-size:1.125rem;
     font-weight: 400;
     position: relative;
     top: -0.3rem;
     z-index: -1;
     margin-top:0;
     padding: 2em 1.25em;
-    line-height: 2rem;
-    min-height: 250px;
     text-align: justify;
     transition: transform 0.5s ease-in-out;
 }
 
-.housing-page__collapse__content__visible { 
-    transform: translateY(0);
+.collapse--default .collapse__content {
+    min-height: 250px;
+    font-size: 1.125rem;
+    line-height: 2rem;
 }
 
-.housing-page__collapse__content__hidden {
-    transform: translateY(-100%);
+.collapse--about .collapse__content {
+    min-height: 145px;
+    font-size: 1.5rem;
+    line-height: 2.125rem;
 }
 
 @media screen and (width <= 768px) {
-    .housing-page__collapse__content__visible {
+    .collapse--about .collapse__content, .collapse--default .collapse__content {
         min-height: 140px;
-        font-size:0.75rem;
-        line-height:1rem;
+        font-size: 0.75rem;
+        line-height: 1rem;
     }
 }
+
+.collapse__content--visible { 
+    transform: translateY(0);
+}
+
+.collapse__content--hidden {
+    transform: translateY(-100%);
+}
+
+.collapse--about .collapse__content--hidden {
+    display:none;
+}
+
+
