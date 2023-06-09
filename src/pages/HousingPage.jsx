@@ -12,7 +12,6 @@ function HousingPage() {
     const { id } = useParams();
     const housingId = HousingList.find((housing) => housing.id === id);
     const navigate = useNavigate();
-    //console.log(housingId);
     useEffect(() =>{
         if (housingId === undefined) {
             navigate("/Page404");

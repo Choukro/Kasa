@@ -1,7 +1,7 @@
 .collapse {
     margin-bottom: 1rem;
     flex-basis: 50%;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 @media screen and (width <= 768px) {
@@ -68,9 +68,11 @@
     top: -0.3rem;
     z-index: -1;
     margin-top:0;
-    padding: 2em 1.25em;
+    padding-inline: 1.25em;
+    padding-top: 2em;
+    padding-bottom: 0.6em;
     text-align: justify;
-    transition: transform 0.5s ease-in-out;
+    /*transition: transform 0.5s ease-in-out;*/
 }
 
 .collapse--default .collapse__content {
@@ -80,7 +82,6 @@
 }
 
 .collapse--about .collapse__content {
-    min-height: 145px;
     font-size: 1.5rem;
     line-height: 2.125rem;
 }
@@ -89,11 +90,28 @@
     .collapse--about .collapse__content, .collapse--default .collapse__content {
         min-height: 140px;
         font-size: 0.75rem;
-        line-height: 1rem;
+        line-height: 1.1rem;
+        padding-right: 0.5em;
+        padding-left: 0.75em;
+        padding-top: 1.125em;
+        padding-bottom: 0em;
     }
 }
 
+.collapse__content--hidden {
+    display:none;
+}
+
+.collapse:last-child .collapse__content--hidden {
+    display:block;
+    visibility: hidden;
+}
+
 .collapse__content--visible { 
+    visibility: visible;
+}
+
+/*.collapse__content--visible { 
     transform: translateY(0);
 }
 
@@ -103,6 +121,4 @@
 
 .collapse--about .collapse__content--hidden {
     display:none;
-}
-
-
+}*/
