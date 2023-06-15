@@ -52,7 +52,7 @@
     text-decoration: underline;
 }
 
-.navbar a:active {
+.navbar a.active {
     text-decoration: underline;
 }
 
