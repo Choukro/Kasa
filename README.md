@@ -15,6 +15,7 @@ _Refonte complète d'un site de location d'appartements entre particulier en Jav
 ## 🧞 Commandes
 
 Ce projet a été démarré avec [Create React App](https://github.com/facebook/create-react-app).
+
 Toutes les commandes sont exécutées depuis la racine du projet, à partir d'un terminal :
 
 | Command      | Action                                                                                      |
